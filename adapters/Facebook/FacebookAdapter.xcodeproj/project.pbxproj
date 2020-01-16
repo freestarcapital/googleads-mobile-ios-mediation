@@ -612,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 500F35C52F3F29AEC46FDCCB /* Pods-FacebookAdapter.release.xcconfig */;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = FacebookAdapter;
 				SKIP_INSTALL = YES;
