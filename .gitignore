@@ -2,3 +2,7 @@ adapters/Facebook/Pods
 adapters/Facebook/FacebookAdapter.xcodeproj/xcuserdata
 adapters/Facebook/FacebookAdapter.xcworkspace/xcuserdata
 adapters/Facebook/Library
+adapters/MoPub/MoPubAdapter.xcodeproj/xcuserdata
+adapters/MoPub/Library
+adapters/MoPub/MoPubAdapter.xcworkspace/xcuserdata
+adapters/MoPub/Pods
