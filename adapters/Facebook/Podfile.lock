@@ -1,8 +1,8 @@
 PODS:
   - FBAudienceNetwork (5.6.0):
     - FBSDKCoreKit/Basics (>= 5.6.0)
-  - FBSDKCoreKit/Basics (5.14.0)
-  - Google-Mobile-Ads-SDK (7.50.0):
+  - FBSDKCoreKit/Basics (5.15.0)
+  - Google-Mobile-Ads-SDK (7.53.1):
     - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.2.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
@@ -34,7 +34,7 @@ PODS:
 
 DEPENDENCIES:
   - FBAudienceNetwork (~> 5.6.0)
-  - Google-Mobile-Ads-SDK (~> 7.50.0)
+  - Google-Mobile-Ads-SDK (~> 7.53.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -47,12 +47,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FBAudienceNetwork: 1ea63543665445a3a5b4a059e8210a343b6ab3c1
-  FBSDKCoreKit: a72c8d2c42aa4c4d5eaa5f160be9580750f70d2e
-  Google-Mobile-Ads-SDK: d48dbaf5bae1ab7a94a9786f493c26c454bc6f16
+  FBSDKCoreKit: 083ba8c8e37939c0b4c84250654c9be0aef0c2f8
+  Google-Mobile-Ads-SDK: fac081606dbd438d8db57198b83ba8b5f875a601
   GoogleAppMeasurement: a08a43b8677b95ed51fcef880e36737334d804fd
   GoogleUtilities: f8de7ddf8c706f58e9b405d53e38bbdaa2731e5a
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 6595bf2c134108252565e1ea7a72282cf6c77ae3
+PODFILE CHECKSUM: d133f57907ee64481fa5a391a4f7e37bd014d369
 
 COCOAPODS: 1.8.4
