@@ -264,7 +264,7 @@
 		7DFABB151DA8682C00322E02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Google;
 				TargetAttributes = {
 					7D1B6CA21DC2ACF900D8CABF = {
@@ -474,7 +474,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -486,6 +486,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = MoPubAdapter;
 			};
 			name = Debug;
@@ -540,6 +541,7 @@
 			baseConfigurationReference = 37BCD3BCDA0C4CB841A3E456 /* Pods-MoPubAdapter.debug.xcconfig */;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = MoPubAdapter;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
@@ -556,7 +558,7 @@
 			baseConfigurationReference = 436E98587C333468669E1B7F /* Pods-MoPubAdapter.release.xcconfig */;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = MoPubAdapter;
 				PUBLIC_HEADERS_FOLDER_PATH = "";

@@ -235,15 +235,9 @@ static NSMapTable<NSString *, GADMAdapterMoPub *> *GADMInterstitialAdapterDelega
   [_connector adapter:self didReceiveAdView:view];
 }
 
-- (void)adViewDidFailToLoadAd:(MPAdView *)view {
-  NSString *errorDescription = [NSString stringWithFormat:@"Mopub failed to fill the ad."];
-  NSDictionary *errorInfo =
-      [NSDictionary dictionaryWithObjectsAndKeys:errorDescription, NSLocalizedDescriptionKey, nil];
-
-  [_connector adapter:self
-            didFailAd:[NSError errorWithDomain:kGADErrorDomain
-                                          code:kGADErrorInvalidRequest
-                                      userInfo:errorInfo]];
+- (void)adView:(MPAdView *)view didFailToLoadAdWithError:(NSError *)error {
+    [_connector adapter:self
+              didFailAd:error];
 }
 
 - (void)willLeaveApplicationFromAd:(MPAdView *)view {
