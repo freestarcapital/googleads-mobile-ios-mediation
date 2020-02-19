@@ -145,6 +145,7 @@
 		45BFFBD52228AE6A00C96A67 /* GADMRTBAdapterAppLovinBannerRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMRTBAdapterAppLovinBannerRenderer.m; sourceTree = "<group>"; };
 		45BFFBD82228AE8900C96A67 /* GADMRTBAdapterAppLovinInterstitialRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADMRTBAdapterAppLovinInterstitialRenderer.h; sourceTree = "<group>"; };
 		45BFFBD92228AE8900C96A67 /* GADMRTBAdapterAppLovinInterstitialRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMRTBAdapterAppLovinInterstitialRenderer.m; sourceTree = "<group>"; };
+		465D89E5EF98DA5A3AD16F98 /* Pods-AppLovinAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinAdapter.release.xcconfig"; path = "Target Support Files/Pods-AppLovinAdapter/Pods-AppLovinAdapter.release.xcconfig"; sourceTree = "<group>"; };
 		7D46CFDF1DB6B7CC0050F612 /* Adapter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Adapter.xcconfig; sourceTree = "<group>"; };
 		7D6A68A31DB7ED230001E48B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7D6A68A41DB7ED310001E48B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 		7DE821BF1DB04B5000AA08CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7DFABB1D1DA8682C00322E02 /* libAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdapter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F32F711F4CDF09006FD441 /* GADMAdapterAppLovinExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdapterAppLovinExtras.h; sourceTree = "<group>"; };
+		CBE5115E96EE8E85E17B6CB4 /* Pods-AppLovinAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinAdapter.debug.xcconfig"; path = "Target Support Files/Pods-AppLovinAdapter/Pods-AppLovinAdapter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		137DA4A9268F455E306CDF53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		359ADF951EFDA7C000E2DBFE /* Public */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +211,15 @@
 				45BFFBD92228AE8900C96A67 /* GADMRTBAdapterAppLovinInterstitialRenderer.m */,
 			);
 			path = OpenBidding;
+			sourceTree = "<group>";
+		};
+		593FC8169BEFA05CEE40710B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5115E96EE8E85E17B6CB4 /* Pods-AppLovinAdapter.debug.xcconfig */,
+				465D89E5EF98DA5A3AD16F98 /* Pods-AppLovinAdapter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		7D46CFDE1DB6B76E0050F612 /* Configuration */ = {
@@ -265,6 +283,8 @@
 				7DE821BD1DB04B5000AA08CF /* BuildScript */,
 				7D46CFDE1DB6B76E0050F612 /* Configuration */,
 				7DFABB1E1DA8682C00322E02 /* Products */,
+				593FC8169BEFA05CEE40710B /* Pods */,
+				137DA4A9268F455E306CDF53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -308,10 +328,11 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7DFABB1C1DA8682C00322E02 /* Adapter */ = {
+		7DFABB1C1DA8682C00322E02 /* AppLovinAdapter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "Adapter" */;
+			buildConfigurationList = 7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "AppLovinAdapter" */;
 			buildPhases = (
+				773E1C9BB67295E3C8EA66E7 /* [CP] Check Pods Manifest.lock */,
 				7DFABB191DA8682C00322E02 /* Sources */,
 				7DFABB1A1DA8682C00322E02 /* Frameworks */,
 				7DFABB1B1DA8682C00322E02 /* CopyFiles */,
@@ -322,7 +343,7 @@
 			dependencies = (
 				009589E022F1060D006E2408 /* PBXTargetDependency */,
 			);
-			name = Adapter;
+			name = AppLovinAdapter;
 			productName = Adapter;
 			productReference = 7DFABB1D1DA8682C00322E02 /* libAdapter.a */;
 			productType = "com.apple.product-type.library.static";
@@ -333,7 +354,7 @@
 		7DFABB151DA8682C00322E02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Google;
 				TargetAttributes = {
 					7D1B6CA21DC2ACF900D8CABF = {
@@ -349,18 +370,18 @@
 			};
 			buildConfigurationList = 7DFABB181DA8682C00322E02 /* Build configuration list for PBXProject "AppLovinAdapter" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 7DFABB141DA8682C00322E02;
 			productRefGroup = 7DFABB1E1DA8682C00322E02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DFABB1C1DA8682C00322E02 /* Adapter */,
+				7DFABB1C1DA8682C00322E02 /* AppLovinAdapter */,
 				7DFABB531DA86A1100322E02 /* FatAdapter */,
 				7D1B6CA21DC2ACF900D8CABF /* Framework */,
 				009589DA22F105E9006E2408 /* ValidateSourceCode */,
@@ -382,6 +403,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -o errexit\nset -o nounset\nset -o xtrace\n\nbash \"${SRCROOT}/BuildScript/Script_Validate.sh\"\n";
+		};
+		773E1C9BB67295E3C8EA66E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppLovinAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		7D1B6CA61DC2AD7700D8CABF /* Framework Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -492,14 +535,21 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -524,6 +574,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -535,14 +586,21 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -567,6 +625,7 @@
 		};
 		7DFABB271DA8682C00322E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE5115E96EE8E85E17B6CB4 /* Pods-AppLovinAdapter.debug.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MIN_OS_MAJOR_VERSION = 8;
@@ -577,7 +636,9 @@
 		};
 		7DFABB281DA8682C00322E02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D89E5EF98DA5A3AD16F98 /* Pods-AppLovinAdapter.release.xcconfig */;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 3;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MIN_OS_MAJOR_VERSION = 8;
 				MIN_OS_MAJOR_VERSION_64_BIT = 8;
@@ -588,14 +649,14 @@
 		7DFABB551DA86A1100322E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
 		7DFABB561DA86A1100322E02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -629,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "Adapter" */ = {
+		7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "AppLovinAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DFABB271DA8682C00322E02 /* Debug */,

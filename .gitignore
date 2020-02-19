@@ -6,3 +6,7 @@ adapters/MoPub/MoPubAdapter.xcodeproj/xcuserdata
 adapters/MoPub/Library
 adapters/MoPub/MoPubAdapter.xcworkspace/xcuserdata
 adapters/MoPub/Pods
+adapters/AppLovin/Pods
+adapters/AppLovin/Library
+adapters/AppLovin/AppLovinAdapter.xcworkspace/xcuserdata
+adapters/AppLovin/AppLovinAdapter.xcodeproj/xcuserdata
