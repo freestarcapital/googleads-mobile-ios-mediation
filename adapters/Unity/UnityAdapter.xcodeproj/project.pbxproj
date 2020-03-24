@@ -94,6 +94,7 @@
 		45BFFB3F222720B900C96A67 /* GADMediationAdapterUnity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMediationAdapterUnity.m; sourceTree = "<group>"; };
 		45BFFB422227210800C96A67 /* GADMAdapterUnityRewardedAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADMAdapterUnityRewardedAd.h; sourceTree = "<group>"; };
 		45BFFB432227210800C96A67 /* GADMAdapterUnityRewardedAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMAdapterUnityRewardedAd.m; sourceTree = "<group>"; };
+		49893CE917202212600147A7 /* Pods-UnityAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityAdapter.release.xcconfig"; path = "Target Support Files/Pods-UnityAdapter/Pods-UnityAdapter.release.xcconfig"; sourceTree = "<group>"; };
 		7D37C14E1DDCEFDF00207DCB /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7D37C14F1DDCEFED00207DCB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D46CFDF1DB6B7CC0050F612 /* Adapter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Adapter.xcconfig; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		7DA782671DDA681E000C088E /* GADUnityError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADUnityError.m; sourceTree = "<group>"; };
 		7DE821BF1DB04B5000AA08CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7DFABB1D1DA8682C00322E02 /* libAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdapter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37C8194AFC134B704810F68 /* Pods-UnityAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnityAdapter.debug.xcconfig"; path = "Target Support Files/Pods-UnityAdapter/Pods-UnityAdapter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,8 @@
 				7DE821BD1DB04B5000AA08CF /* BuildScript */,
 				7D46CFDE1DB6B76E0050F612 /* Configuration */,
 				7DFABB1E1DA8682C00322E02 /* Products */,
+				FCC2372A1FBA8BEF8B5CC52A /* Pods */,
+				95B0E3358A02939BA7AB3448 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +210,22 @@
 				7DFABB1D1DA8682C00322E02 /* libAdapter.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		95B0E3358A02939BA7AB3448 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCC2372A1FBA8BEF8B5CC52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F37C8194AFC134B704810F68 /* Pods-UnityAdapter.debug.xcconfig */,
+				49893CE917202212600147A7 /* Pods-UnityAdapter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +251,11 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7DFABB1C1DA8682C00322E02 /* Adapter */ = {
+		7DFABB1C1DA8682C00322E02 /* UnityAdapter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "Adapter" */;
+			buildConfigurationList = 7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "UnityAdapter" */;
 			buildPhases = (
+				526084752C3081A1252420A8 /* [CP] Check Pods Manifest.lock */,
 				7DFABB191DA8682C00322E02 /* Sources */,
 				7DFABB1A1DA8682C00322E02 /* Frameworks */,
 				7DFABB1B1DA8682C00322E02 /* CopyFiles */,
@@ -245,7 +266,7 @@
 			dependencies = (
 				00DD269A22F10D270039C1D4 /* PBXTargetDependency */,
 			);
-			name = Adapter;
+			name = UnityAdapter;
 			productName = Adapter;
 			productReference = 7DFABB1D1DA8682C00322E02 /* libAdapter.a */;
 			productType = "com.apple.product-type.library.static";
@@ -283,7 +304,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DFABB1C1DA8682C00322E02 /* Adapter */,
+				7DFABB1C1DA8682C00322E02 /* UnityAdapter */,
 				7DFABB531DA86A1100322E02 /* FatAdapter */,
 				7D1B6CA21DC2ACF900D8CABF /* Framework */,
 				00DD269422F10D0C0039C1D4 /* ValidateSourceCode */,
@@ -305,6 +326,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -o errexit\nset -o nounset\nset -o xtrace\n\nbash \"${SRCROOT}/BuildScript/Script_Validate.sh\"\n";
+		};
+		526084752C3081A1252420A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnityAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		7D1B6CA61DC2AD7700D8CABF /* Framework Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -388,6 +431,7 @@
 		7D1B6CA51DC2ACF900D8CABF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 3;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
@@ -475,6 +519,7 @@
 		};
 		7DFABB271DA8682C00322E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37C8194AFC134B704810F68 /* Pods-UnityAdapter.debug.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SKIP_INSTALL = YES;
@@ -483,6 +528,7 @@
 		};
 		7DFABB281DA8682C00322E02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49893CE917202212600147A7 /* Pods-UnityAdapter.release.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SKIP_INSTALL = YES;
@@ -533,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "Adapter" */ = {
+		7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "UnityAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DFABB271DA8682C00322E02 /* Debug */,

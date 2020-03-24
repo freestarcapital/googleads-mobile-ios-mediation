@@ -15,3 +15,8 @@ adapters/AdColony/Library
 adapters/AdColony/Pods
 adapters/AdColony/AdColonyAdapter.xcworkspace/xcuserdata
 adapters/AdColony/AdColonyAdapter.xcodeproj/xcuserdata
+adapters/Unity/Library
+adapters/Unity/Pods
+adapters/Unity/UnityAdapter.xcodeproj/xcuserdata
+adapters/Unity/UnityAdapter.xcworkspace/xcuserdata
+adapters/Unity/UnityAdapter.xcodeproj/project.xcworkspace/xcuserdata
