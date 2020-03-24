@@ -85,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		0028CEDA22F0FC1D00151C65 /* Script_Validate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Script_Validate.sh; sourceTree = "<group>"; };
+		0CBD954A4866B1BC7ABC13FD /* Pods-AdColonyAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdColonyAdapter.debug.xcconfig"; path = "Target Support Files/Pods-AdColonyAdapter/Pods-AdColonyAdapter.debug.xcconfig"; sourceTree = "<group>"; };
 		4534E82022862B98000381F8 /* GADMediationAdapterAdColony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMediationAdapterAdColony.h; sourceTree = "<group>"; };
 		45476078228612BC0041D40B /* GADMAdapterAdColonyRewardedRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADMAdapterAdColonyRewardedRenderer.h; sourceTree = "<group>"; };
 		45476079228612BC0041D40B /* GADMAdapterAdColonyRewardedRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMAdapterAdColonyRewardedRenderer.m; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		45BFFBB722286EE100C96A67 /* GADMAdapterAdColonyInitializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMAdapterAdColonyInitializer.m; sourceTree = "<group>"; };
 		45BFFBBE22286F4E00C96A67 /* GADMAdapterAdColonyHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADMAdapterAdColonyHelper.h; sourceTree = "<group>"; };
 		45BFFBBF22286F4E00C96A67 /* GADMAdapterAdColonyHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADMAdapterAdColonyHelper.m; sourceTree = "<group>"; };
+		676B363E48BAEDF34FEF2C64 /* Pods-AdColonyAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdColonyAdapter.release.xcconfig"; path = "Target Support Files/Pods-AdColonyAdapter/Pods-AdColonyAdapter.release.xcconfig"; sourceTree = "<group>"; };
 		7D264FF01DDD1B4E00027720 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7D264FF21DDD1B9400027720 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D46CFDF1DB6B7CC0050F612 /* Adapter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Adapter.xcconfig; sourceTree = "<group>"; };
@@ -124,6 +126,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2912E4AB2D78B74931BB7ABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		454760732286125C0041D40B /* OpenBidding */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +211,8 @@
 				7DE821BD1DB04B5000AA08CF /* BuildScript */,
 				7D46CFDE1DB6B76E0050F612 /* Configuration */,
 				7DFABB1E1DA8682C00322E02 /* Products */,
+				DEAAED40462DDA0AFC862978 /* Pods */,
+				2912E4AB2D78B74931BB7ABE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +222,15 @@
 				7DFABB1D1DA8682C00322E02 /* libAdapter.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DEAAED40462DDA0AFC862978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CBD954A4866B1BC7ABC13FD /* Pods-AdColonyAdapter.debug.xcconfig */,
+				676B363E48BAEDF34FEF2C64 /* Pods-AdColonyAdapter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +255,11 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7DFABB1C1DA8682C00322E02 /* Adapter */ = {
+		7DFABB1C1DA8682C00322E02 /* AdColonyAdapter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "Adapter" */;
+			buildConfigurationList = 7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "AdColonyAdapter" */;
 			buildPhases = (
+				A9E5F2773ECD592B348590E8 /* [CP] Check Pods Manifest.lock */,
 				7DFABB191DA8682C00322E02 /* Sources */,
 				7DFABB1A1DA8682C00322E02 /* Frameworks */,
 				7DFABB1B1DA8682C00322E02 /* CopyFiles */,
@@ -249,7 +270,7 @@
 			dependencies = (
 				0028CEDC22F0FF3000151C65 /* PBXTargetDependency */,
 			);
-			name = Adapter;
+			name = AdColonyAdapter;
 			productName = Adapter;
 			productReference = 7DFABB1D1DA8682C00322E02 /* libAdapter.a */;
 			productType = "com.apple.product-type.library.static";
@@ -287,7 +308,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DFABB1C1DA8682C00322E02 /* Adapter */,
+				7DFABB1C1DA8682C00322E02 /* AdColonyAdapter */,
 				7DFABB531DA86A1100322E02 /* FatAdapter */,
 				7D1B6CA21DC2ACF900D8CABF /* Framework */,
 				0028CED522F0FB8100151C65 /* ValidateSourceCode */,
@@ -337,6 +358,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/BuildScript/Script_Library.sh\"\n";
+		};
+		A9E5F2773ECD592B348590E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdColonyAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -480,6 +523,7 @@
 		};
 		7DFABB271DA8682C00322E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CBD954A4866B1BC7ABC13FD /* Pods-AdColonyAdapter.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,11 +536,13 @@
 		};
 		7DFABB281DA8682C00322E02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676B363E48BAEDF34FEF2C64 /* Pods-AdColonyAdapter.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_OPTIMIZATION_LEVEL = 3;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SKIP_INSTALL = YES;
 			};
@@ -546,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "Adapter" */ = {
+		7DFABB261DA8682C00322E02 /* Build configuration list for PBXNativeTarget "AdColonyAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DFABB271DA8682C00322E02 /* Debug */,
