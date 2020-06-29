@@ -20,3 +20,5 @@ adapters/Unity/Pods
 adapters/Unity/UnityAdapter.xcodeproj/xcuserdata
 adapters/Unity/UnityAdapter.xcworkspace/xcuserdata
 adapters/Unity/UnityAdapter.xcodeproj/project.xcworkspace/xcuserdata
+adapters/Facebook/build
+adapters/MoPub/build
